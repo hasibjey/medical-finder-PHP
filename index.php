@@ -11,8 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
         integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -43,10 +43,10 @@
     <nav class="main-nav">
         <ul class="main-nav-group">
             <li class="main-nav-item active">
-                <a href="" class="main-nav-link">Home</a>
+                <a href="./index.php" class="main-nav-link">Home</a>
             </li>
             <li class="main-nav-item">
-                <a href="" class="main-nav-link">Doctor</a>
+                <a href="./items.php" class="main-nav-link">Doctor</a>
             </li>
             <li class="main-nav-item">
                 <a href="" class="main-nav-link">Hospital</a>
