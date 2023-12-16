@@ -1,5 +1,5 @@
 <?php
-$title = "Medi Finder";
+$title = "About";
 include_once("./inc/header.php");
 include_once("./inc/navigation.php");
 include_once("./inc/slider.php");
