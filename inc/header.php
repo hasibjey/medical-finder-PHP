@@ -1,8 +1,8 @@
 <?php
-    include_once('./controllers/controllers.php');
-
-    pageName();
+include_once('./controllers/controllers.php');
+$category = isset($_GET['item']) ? $_GET['item'] : pageName();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

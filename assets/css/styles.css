@@ -1003,3 +1003,60 @@ ul {
     background-color: #01d28e;
     color: #FFF;
 }
+
+.donner-name {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+.donner-info {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    ;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.donner-info.address {
+    height: 53px;
+    overflow: hidden;
+}
+
+.donner-wanted {
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    height: 400px;
+    padding: 10px 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.donner-wanted>p {
+    margin: 0;
+}
+
+.donner-wanted>.donner-name,
+.donner-wanted>.donner-info {
+    color: #212121;
+}
+
+.donner-want-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hospital-info,
+.contact-info {
+    font-size: 24px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.donner-want-info {
+    font-size: 16px;
+    text-transform: capitalize;
+}
