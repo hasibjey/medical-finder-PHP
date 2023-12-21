@@ -1,5 +1,5 @@
 <?php
-$title = "Dashboard";
+$title = "Admins";
 include_once('./inc/header.php');
 ?>
 
@@ -44,18 +44,18 @@ include_once('./inc/header.php');
                 <div class="card">
                     <div class="card-header fst-italic">Insert Admins</div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="./controllers/AdminController.php" method="post">
                             <div class="mb-3">
                                 <label class="label">name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="name">
                             </div>
                             <div class="mb-3">
                                 <label class="label">email</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="email">
                             </div>
                             <div class="my-4 text-center">
                                 <button class="btn btn-sm btn-danger px-4" type="reset">Clear</button>
-                                <button class="btn btn-sm btn-success px-4" type="submit">Insert</button>
+                                <button class="btn btn-sm btn-success px-4 text-capitalize" type="submit" name="insert">Insert</button>
                             </div>
                         </form>
                     </div>
