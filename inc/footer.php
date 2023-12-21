@@ -2,7 +2,7 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4 p-4">
+            <div class="col-4 p-4">
                 <h4 class="footer-logo">
                     <a href="">Doctors Finder</a>
                 </h4>
@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-4 p-4">
+            <div class="col-4 p-4">
                 <h4 class="footer-title">service</h4>
                 <ul class="footer-link-group">
                     <li class="footer-nav-item">
@@ -39,7 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-4 p-4">
+            <div class="col-4 p-4">
                 <h4 class="footer-title">Contact information</h4>
                 <ul class="footer-link-group">
                     <li class="footer-nav-item info-item">
@@ -68,7 +68,6 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="https://kit.fontawesome.com/2f7a0c449d.js" crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- <script src="./assets/js/counter_up.js"></script> -->
 <script src="./assets/js/frontend.js"></script>

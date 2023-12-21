@@ -1,4 +1,5 @@
 <?php
+include_once("./inc/conn.php");
 include_once("../controllers/controllers.php");
 ?>
 <!DOCTYPE html>

@@ -262,14 +262,14 @@ ul {
 }
 .table > tbody > tr > th:last-child,
 .table > tbody > tr > td:last-child {
-    width: 15%;
+    width: 10%;
     text-align: center;
 }
 
 
 #category-table > tbody > tr > th:nth-child(2),
 #category-table > tbody > tr > td:nth-child(2) {
-    width: 50%;
+    width: 45%;
 }
 #category-table > tbody > tr > th:nth-child(3),
 #category-table > tbody > tr > td:nth-child(3) {
@@ -277,5 +277,6 @@ ul {
 }
 #category-table > tbody > tr > th:nth-child(4),
 #category-table > tbody > tr > td:nth-child(4) {
-    width: 10%;
+    width: 15%;
+    text-align: center;
 }

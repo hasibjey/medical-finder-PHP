@@ -78,13 +78,11 @@ ul {
 .logo {
     width: 100%;
     height: 100%;
-}
-
-.logo {
     font-size: 3rem;
     font-style: italic;
     font-weight: 900;
-
+    display: block;
+    color: #212121;
 }
 
 .main-nav {
@@ -414,11 +412,17 @@ ul {
     display: none;
 }
 
+.main-search-btn {
+    justify-content: center;
+    margin-top: 2rem
+}
+
 .search-btn {
     background: #6c5ce7;
     border: 1px solid #6c5ce7;
     color: #fff;
     padding: 14px 0;
+    width: 100%;
 }
 
 .search-btn:hover {
@@ -874,9 +878,10 @@ ul {
 }
 
 .counter-section {
-    margin-bottom: 3rem;
+    margin: 2rem 0;
     background-color: #2d3e50;
-    padding: 2rem 0
+    padding: 2rem 0;
+    justify-content: center;
 }
 
 .counter-box {
@@ -971,6 +976,7 @@ ul {
 .search-section {
     background-color: #01d28e;
     padding: 10px 0;
+    justify-content: center;
 }
 
 .pagi-group {
@@ -1059,4 +1065,107 @@ ul {
 .donner-want-info {
     font-size: 16px;
     text-transform: capitalize;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    outline: none;
+    border-radius: 0.375rem;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: calc(100% / 12);
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: calc(100% / 6);
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: calc(100% / 4);
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: calc(100% / 2);
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-1 {
+    padding: 0.5rem !important;
+    box-sizing: border-box;
+}
+
+.p-2 {
+    padding: 1rem !important;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.about {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about>.title {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
 }

@@ -211,16 +211,14 @@ include_once("./weights/main_search.php");
 </section>
 
 <!-- counter section -->
-<section class="counter-section">
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-3 col-lg-2 counter-box">
-            <div class="counter">100</div>
-            <div class="counter-title">Doctors</div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-2 counter-box">
-            <div class="counter">100</div>
-            <div class="counter-title">hospitals</div>
-        </div>
+<section class="row counter-section">
+    <div class="col-2 counter-box">
+        <div class="counter">100</div>
+        <div class="counter-title">Doctors</div>
+    </div>
+    <div class="col-2 counter-box">
+        <div class="counter">100</div>
+        <div class="counter-title">hospitals</div>
     </div>
 </section>
 
