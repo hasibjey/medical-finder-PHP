@@ -280,3 +280,12 @@ ul {
     width: 15%;
     text-align: center;
 }
+
+#admins-table > tbody > tr > th:nth-child(2),
+#admins-table > tbody > tr > td:nth-child(2) {
+    width: 45%;
+}
+#admins-table > tbody > tr > th:nth-child(3),
+#admins-table > tbody > tr > td:nth-child(3) {
+    width: 40%;
+}
