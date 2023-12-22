@@ -25,3 +25,15 @@ status VARCHAR(191) NOT NULL DEFAULT '1'
 )");
 if($sql) echo "Category Table migrate successfully.<br>";
 else echo "Category table are not migrate.<br>";
+
+
+/**
+ * blood group table
+ */
+$sql = $conn->query("CREATE TABLE bloods (
+  id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  blood VARCHAR(191) NOT NULL
+  )");
+  if($sql) echo "Blood group Table migrate successfully.<br>";
+  else echo "Blood group table are not migrate.<br>";
+  

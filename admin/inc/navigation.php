@@ -7,7 +7,7 @@
             <a href="./category.php" class="nav-link <?php if(pageName() == 'category') { echo 'nav-active';} ?>">Category</a>
         </li>
         <li class="nav-item">
-            <a href="./donner.php" class="nav-link <?php if(pageName() == 'donner') { echo 'nav-active';} ?>">donner</a>
+            <a href="./donor.php" class="nav-link <?php if(pageName() == 'donor') { echo 'nav-active';} ?>">donor</a>
         </li>
         <li class="nav-item">
             <a href="./admins.php" class="nav-link <?php if(pageName() == 'admins') { echo 'nav-active';} ?>">admins</a>
