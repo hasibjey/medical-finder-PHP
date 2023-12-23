@@ -1,6 +1,11 @@
 <?php
 include_once("./inc/conn.php");
 include_once("../controllers/controllers.php");
+session_start();
+if (!isset($_SESSION["logging"]) || $_SESSION['logging'] != true) {
+    header("location: ./login.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

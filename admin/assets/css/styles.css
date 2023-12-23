@@ -103,6 +103,7 @@ ul {
     position: fixed;
     top: 60px;
     right: -200px;
+    z-index: 9999;
     transition: right 0.4s ease-in-out;
 }
 .admin-nav-active {

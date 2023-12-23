@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION["logging"])) {
+    header("location: ./index.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,17 +23,17 @@
     <section class="admin-login-section">
         <div class="admin-login">
             <div class="admin-login-title">Admin login</div>
-            <form action="" method="post">
+            <form action="./controllers/Authentication.php" method="post">
                 <div class="admin-login-group">
                     <label>email</label>
-                    <input type="email" class="admin-login-control">
+                    <input type="email" class="admin-login-control" name="email">
                 </div>
                 <div class="admin-login-group">
                     <label>password</label>
-                    <input type="password" class="admin-login-control">
+                    <input type="password" class="admin-login-control" name="password">
                 </div>
                 <div class="admin-login-group">
-                    <button class="admin-login-btn">login</button>
+                    <button class="admin-login-btn" name="login">login</button>
                 </div>
             </form>
         </div>

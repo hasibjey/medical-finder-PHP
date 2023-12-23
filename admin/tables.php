@@ -13,6 +13,12 @@ password VARCHAR(191)
 if($sql) echo "Admin Table migrate successfully.<br>";
 else echo "Admin table are not migrate.<br>";
 
+$name = "Admin";
+$email = "admin@gmail.com";
+$password = password_hash('password', PASSWORD_DEFAULT);
+
+$sql = $conn->query("INSERT INTO `admins` (`name`, `email`, `password`) VALUES ('$name', '$email', '$password')");
+
 
 /**
  * category table
