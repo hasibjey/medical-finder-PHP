@@ -1,6 +1,22 @@
 <?php
 $title = "Dashboard";
 include_once('./inc/header.php');
+$bloods = $conn->query("SELECT * FROM `bloods`");
+$id = null;
+$blood = null;
+$btnTitle = "insert";
+
+if(isset($_GET['edit'])) {
+    $eid = $_GET['edit'];
+    $sql = $conn->query("SELECT * FROM `bloods` WHERE `id` = '$eid' ");
+    if($sql->num_rows > 0){
+        while($row = mysqli_fetch_assoc($sql)){
+            $id = $row["id"];
+            $blood = $row["blood"];
+            $btnTitle = "update";
+        }
+    }
+}
 ?>
 
 <section class="right-section">
@@ -34,22 +50,50 @@ include_once('./inc/header.php');
                                 <th>blood group</th>
                                 <th>Action</th>
                             </tr>
+                            <?php
+                            if ($bloods->num_rows > 0) {
+                                $i = 1;
+                                while ($adm = mysqli_fetch_assoc($bloods)) {
+                            ?>
+                                    <tr>
+                                        <td><?php echo $i; ?></td>
+                                        <td><?php echo $adm['blood']; ?></td>
+                                        <td>
+                                            <div class="d-flex justify-content-between">
+                                                <form action="./controllers/BloodController.php" method="post">
+                                                    <button class="btn btn-sm btn-danger" name="delete" value="<?php echo $adm['id']; ?>"><i class="fa-solid fa-trash"></i></button>
+                                                </form>
+                                                <form action="" method="get">
+                                                    <button class="btn btn-sm btn-success" name="edit" value="<?php echo $adm['id']; ?>"><i class="fa-regular fa-pen-to-square"></i></button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            <?php }
+                                $i++;
+                            } ?>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
-                    <div class="card-header">Insert blood group</div>
+                    <div class="card-header"><?php echo $btnTitle; ?> blood group</div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="./controllers/BloodController.php" method="post">
+                            <input type="text" name="id" value="<?php echo $id; ?>" hidden>
                             <div class="mb-3">
                                 <label class="label">blood group</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="blood" value="<?php echo $blood; ?>">
                             </div>
                             <div class="my-4 text-center">
-                                <button class="btn btn-sm btn-danger px-4" type="reset">Clear</button>
-                                <button class="btn btn-sm btn-success px-4" type="submit">Insert</button>
+                                <?php
+                                if($btnTitle == 'insert')
+                                    echo '<button class="btn btn-sm btn-danger px-4" type="reset">Clear</button>';
+                                else
+                                    echo '<a href="./blood.php" class="btn btn-sm btn-danger px-4">Clear</a>';
+                                ?>
+                                <button class="btn btn-sm btn-success px-4 text-capitalize" type="submit" name="<?php echo $btnTitle; ?>"><?php echo $btnTitle; ?></button>
                             </div>
                         </form>
                     </div>
